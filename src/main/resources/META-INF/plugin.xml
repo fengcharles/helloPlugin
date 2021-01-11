@@ -1,0 +1,22 @@
+<idea-plugin>
+    <id>cc.fyp.idea.plugin.helloPlugin</id>
+    <name>helloPlugin</name>
+    <vendor email="relfyp@qq.com" url="https://jxyp.cc">null</vendor>
+
+    <description>This is a demo,Named helloPlugin for test</description>
+
+    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <action id="demo.hello.world" class="HelloWorldAction" text="HelloWorld" description="say hello world">
+            <add-to-group group-id="GenerateGroup" anchor="last"/>
+        </action>
+    </actions>
+</idea-plugin>
